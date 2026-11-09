@@ -12,7 +12,7 @@ The web side of [Metrocraft 2036](https://github.com/IgorJs2/MetrocraftGame): th
 | Current version | Went live in October 2026, after a maintenance window that replaced the site, forum, login and launcher at once |
 | Editions | Global (.com, English) and Russian (.ru): separate domains, news, forum sections and file servers, one shared account |
 
-![Global home page](images/home-global.jpg)
+![Home page](images/home.jpg)
 
 ## How it fits together
 - Next.js frontend, one codebase built into two editions by domain.
@@ -23,13 +23,14 @@ The web side of [Metrocraft 2036](https://github.com/IgorJs2/MetrocraftGame): th
 - Docker Compose environments with GitHub Actions deploys, behind nginx and Cloudflare, with Sentry, Prometheus and Grafana for errors and metrics.
 
 ## IGS ID and the player profile
-The profile has five tabs: account info (nickname, playtime, balance, characters, promo codes), linked accounts, an inventory of event rewards and currency, active sessions across site, forum and launcher, and security settings with 2FA.
+The profile has five tabs: account info (nickname, playtime, balance, characters, promo codes), linked accounts, an inventory of event rewards and currency, recent activity across the site, forum and launcher, and security settings with 2FA.
 
 ![IGS ID login](images/igs-id-login.jpg)
 ![Profile](images/account.jpg)
 ![Linked accounts](images/account-links.jpg)
 ![Two-factor authentication](images/account-2fa.jpg)
-![Active sessions](images/account-sessions.jpg)
+![Inventory](images/account-inventory.jpg)
+![Recent activity](images/account-activity.jpg)
 
 ## News, forum and support
 - News with categories (updates, patch notes, tests, devlogs), shown on the site and inside the launcher.
@@ -39,6 +40,7 @@ The profile has five tabs: account info (nickname, playtime, balance, characters
 
 ![News](images/news.jpg)
 ![Forum](images/forum.jpg)
+![Forum thread](images/forum-thread.jpg)
 ![Support](images/support.jpg)
 
 ## Launcher
@@ -47,6 +49,7 @@ A Tauri launcher with versioned builds, several saved accounts, a language switc
 ![Launcher](images/launcher.jpg)
 ![Launcher accounts](images/launcher-accounts.jpg)
 ![Launcher news](images/launcher-news.jpg)
+![Language switch](images/launcher-language.jpg)
 
 ## Tech stack
 | Area | Stack |
@@ -57,7 +60,3 @@ A Tauri launcher with versioned builds, several saved accounts, a language switc
 | Community | Flarum, FreeScout, Discord bots |
 | Launcher | Tauri, S3/CDN, peer-to-peer delivery (rqbit) |
 | Infrastructure | Docker Compose, GitHub Actions, nginx, Cloudflare, Sentry, Prometheus, Grafana |
-
-The Russian home page:
-
-![Russian home page](images/home-ru.jpg)
